@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Chemical Billy</title>
+    <style>
+      body {
+        font-family: helvetica;
+        margin: 0;
+        padding: 0;
+        background: #000 url(images/teksware_cool_blue.jpg) 0 -120px repeat-x;
+        color: #fff;
+      }
+      h1,
+      h3 {
+        width: 400px;
+        margin: auto auto;
+        text-align: center;
+        letter-spacing: 10px;
+      }
+      h3 {
+        margin-top: 5px;
+      }
+      #banner {
+        background: #000;
+        margin: 0;
+        padding: 3em;
+      }
+      #album {
+        width: 750px;
+        margin: 12em auto 0;
+        text-align: center;
+      }
+      #album img {
+        border: 1px solid #fff;
+        margin: 25px;
+      }
+      #footer {
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="album">
+      <img src="images/cb_a.jpg" />
+      <br /><br />
+      <img src="images/cb-plane.jpg" />
+    </div>
+    <div id="footer">&copy <span id="date"></span> Kevin Ryan</div>
+
+    <script>
+      const element = document.querySelector("#date");
+      const date = new Date();
+      const year = date.getFullYear();
+      element.innerHTML = year;
+    </script>
+  </body>
+</html>
